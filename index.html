@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Detection</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="getstarted.html">Get Started</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Phishing Email Detection</h1>
+        <p>Upload an email to check for potential phishing attempts.</p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="emailInput" name="email" accept=".eml,.msg,.mbox,.pst,.pdf,.txt,.ost,.emlx,.mbx,.xml" required />
+            <button type="submit">Check Email</button>
+        </form>
+
+        <div id="result">
+            <!-- Result will be shown here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
